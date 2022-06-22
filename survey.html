@@ -1,0 +1,137 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center"> Fast Food Survey </h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to fill out this survery.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+             type="text"
+             name="name"
+             id="name"
+             class="form-comtrol"
+             placeholder="Enter your name"
+             required
+             />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+             type="email"
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="Enter your email"
+             required
+             />
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>What is your favourite fast-food?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select from list</option>
+        <option value="pizza">Pizza</option>
+        <option value="sushi">Sushi</option>
+        <option value="fishchips">Fish & Chips</option>
+        <option value="indian">Indian</option>
+        <option value="burgers">Burgers</option>
+        <option value="friedchicken">Fried Chicken</option>
+        <option value="desserts">Desserts</option>
+        <option value="chinese">Chinese</option>
+        <option value="other">Other</option>
+      </select>
+    </div>      
+      
+     <div class="form-group">
+      <p>How many days a week do you eat fast food?</p>
+      <label>
+        <input
+          name="weekly"
+          value="2-"
+          type="radio"
+          class="input-radio"
+          checked
+        />Less than 2 days</label
+      >
+      <label>
+        <input
+          name="weekly"
+          value="2-4"
+          type="radio"
+          class="input-radio"
+        />2-4 Days</label
+      >
+
+      <label
+        ><input
+          name="weekly"
+          value="5+"
+          type="radio"
+          class="input-radio"
+        />5 Days or more</label
+      >
+    </div>     
+      
+        <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+      
+     <div class="form-group">
+       <p>
+         Why do you eat fast food?
+         <span class="clue">(Check all that apply)</span>
+       </p>
+       
+       <label>
+         <input
+                name="prefer"
+                value="convinience"
+                type="checkbox"
+                class="input-selection"
+                />Convinience</label>
+              <label>
+         <input
+                name="prefer"
+                value="price"
+                type="checkbox"
+                class="input-selection"
+                />Price</label>
+              <label>
+         <input
+                name="prefer"
+                value="taste"
+                type="checkbox"
+                class="input-selection"
+                />Taste</label>
+       
+       
+      
+        <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+          
